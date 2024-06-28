@@ -12,7 +12,7 @@ export const Header: FC = () => {
 
   return (
     <div className="flex sticky top-0 z-10 justify-between border-b border-[#F5FFFF14] py-5 h-14 px-6 sm:px-[60px] items-center">
-      <div className="flex w-full justify-between">
+      <div className="flex w-full justify-between items-center">
         <div className="flex w-full gap-1">
           <TrustfulIcon />
           <h1 className="flex items-center text-white">Trustful</h1>
@@ -24,9 +24,10 @@ export const Header: FC = () => {
             }
           />
         )}
+        <div className="w-full h-full flex justify-center items-center">
+          {isConnected && <CustomConnectButon />}
+        </div>
       </div>
-
-      <div>{isConnected && <CustomConnectButon />}</div>
     </div>
   );
 };

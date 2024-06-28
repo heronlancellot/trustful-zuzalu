@@ -62,7 +62,7 @@ export const CustomConnectButon = (
                     onClick={openChainModal}
                     style={{ display: "flex", alignItems: "center" }}
                     type="button"
-                    className="bg-lime-400 rounded-lg p-1 text-black"
+                    className="text-white"
                   >
                     {chain.hasIcon && (
                       <div
